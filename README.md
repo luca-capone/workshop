@@ -14,7 +14,7 @@ Niente. Questo corso è stato pensato e strutturato appositamente per chi non ha
 > [!warning] Attenzione
 > Riquadri come questo contengono informazioni a cui si deve prestare particolare attenzione perché possono causare bug o comportamenti indesiderati nel codice.
 
-> [!TIP] Consiglio da esperti
+> [!tip] Consiglio da esperti
 > Riquadri come questo contengono informazioni un po' più avanzate, non fondamentali alla comprensione del testo ma preziose da conoscere.
 
 > [!success] Esempio positivo
