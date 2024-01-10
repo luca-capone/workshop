@@ -1,34 +1,104 @@
+# Site information
 site_name: "Python Workshop"
+site_author: Luca Capone
 site_description: "Material for Python Bootcamp"
 # site_url:
+
+# Repository
+repo_name: luca-capone/workshop
 repo_url: "https://github.com/luca-capone/workshop"
 edit_uri: blob/main/docs/
 use_directory_urls: false
 
+# Theme configuration
 theme:
   name: material
   features:
-    - content.action.edit
-    - navigation.tabs
-    - toc.integrate
+    - announce.dismiss       # allows users to dismiss announcements
+    - content.action.edit    # add an edit button to pages
+    - content.action.view    # add a View source button to pages
+    - content.code.annotate  # enable annotations for code blocks
+    - content.code.copy      # add a copy button to code blocks
+    - content.tooltips       # add tooltips to provide additional information.
+    - navigation.footer      # enables a footer in the navigation area
+    - navigation.indexes     # automatically generate index pages for sections
+    - navigation.sections    # divide the navigation into sections
+    - navigation.tabs        # add tabs
+    - navigation.top         # add a button to scroll to the top of the page
+    - search.highlight       # highlight search terms
+    - search.share           # allow sharing search results
+    - search.suggest         # search autocompletion
+    - toc.follow             # table of contents actively follows the reading progress
+    # - toc.integrate          # integrate the table of contents into the navigation
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
-  palette:
-    primary: teal
-    accent: purple
 
+# Markdown extensions
 markdown_extensions:
-  - pymdownx.details
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.highlight
-  - pymdownx.magiclink
-  - pymdownx.saneheaders
-  - pymdownx.superfences
-  - callouts
+  - abbr
+  - admonition
+  - attr_list
+  - codehilite
+  - def_list
+  - footnotes
   - md_in_html
   - toc:
-      permalink: "#"
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+
 
 validation:
   omitted_files: warn
@@ -38,5 +108,13 @@ validation:
     absolute_links: ignore
 
 nav:
-  - about: about.md
-  - main: main.md
+  - Home: home.md
+  - Materiale:
+    - Introduzione: 00_introduction.md
+    - Setup: 01_setup.md
+    - Nozioni fondamentali: 02_fundamentals.md
+    - Flusso di controllo: 03_control_flow.md
+    - Funzioni: 04_functions.md
+    - Classi: 05_classes.md
+    - Ecosistema: 06_ecosystem.md
+  - About: about.md
