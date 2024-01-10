@@ -1,0 +1,42 @@
+site_name: "Python Workshop"
+site_description: "Material for Python Bootcamp"
+# site_url:
+repo_url: "https://github.com/luca-capone/workshop"
+edit_uri: blob/main/docs/
+use_directory_urls: false
+
+theme:
+  name: material
+  features:
+    - content.action.edit
+    - navigation.tabs
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: teal
+    accent: purple
+
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - pymdownx.magiclink
+  - pymdownx.saneheaders
+  - pymdownx.superfences
+  - callouts
+  - md_in_html
+  - toc:
+      permalink: "#"
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  nav:
+    absolute_links: ignore
+
+nav:
+  - about: about.md
+  - main: main.md
