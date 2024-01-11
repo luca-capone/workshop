@@ -18,3 +18,8 @@ serve:  ## start the live-reloading docs server.
 
 build: ## build the documentation site.
 	@mkdocs build
+
+setup: ## setup the project and serve the site, run once.
+	@poetry install
+	@poetry shell
+	@make serve
