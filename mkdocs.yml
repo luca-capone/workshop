@@ -110,11 +110,11 @@ validation:
 nav:
   - Home: home.md
   - Materiale:
-    - Introduzione: 00_introduction.md
-    - Setup: 01_setup.md
-    - Nozioni fondamentali: 02_fundamentals.md
-    - Flusso di controllo: 03_control_flow.md
-    - Funzioni: 04_functions.md
-    - Classi: 05_classes.md
-    - Ecosistema: 06_ecosystem.md
+    - Introduzione: lessons_1/00_introduction.md
+    - Setup: lessons_1/01_setup.md
+    - Nozioni fondamentali: lessons_1/02_fundamentals.md
+    - Flusso di controllo: lessons_1/03_control_flow.md
+    - Funzioni: lessons_1/04_functions.md
+    - Classi: lessons_1/05_classes.md
+    - Ecosistema: lessons_1/06_ecosystem.md
   - About: about.md
