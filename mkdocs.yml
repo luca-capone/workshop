@@ -54,6 +54,7 @@ theme:
 plugins:
   - mkdocs-jupyter:
       execute: True
+      include_source: True
 
 
 # Markdown extensions
