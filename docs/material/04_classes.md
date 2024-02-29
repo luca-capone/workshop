@@ -1,7 +1,7 @@
 # Classi
 ## Programmazione Orientata agli Oggetti
 
-Python è un linguaggio di programmazione che supporta la **programmazione orientata agli oggetti** (***o**bject **o**riented **p**rogramming*, **OOP**). Per capire questo concetto, immaginate un oggetto come una scatola che contiene informazioni e strumenti. Le informazioni sono chiamate **attributi**, mentre gli strumenti sono le **funzioni** o **metodi**.
+Python è un linguaggio di programmazione che supporta la **programmazione orientata agli oggetti** (**o**bject **o**riented **p**rogramming*, **OOP**). Per capire questo concetto, immaginate un oggetto come una scatola che contiene informazioni e strumenti. Le informazioni sono chiamate **attributi**, mentre gli strumenti sono le **funzioni** o **metodi**.
 
 Una classe è come un **modello** (*template*) per creare oggetti. Per definire una classe, si utilizza la parola chiave `class`, seguita dal nome della classe e due punti. All'interno della classe, si definiscono le variabili ed i metodi che appartengono alla classe.
 

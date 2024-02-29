@@ -8,7 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 markdown = "^3.5.1"
 markdown-callouts = "^0.3.0"
+matplotlib = "^3.8.3"
 mkdocs = "^1.5.3"
+mkdocs-jupyter = "^0.24.6"
 mkdocs-material = "^9.5.3"
 mkdocs-material-extensions = "^1.3.1"
 mkdocs-minify-plugin = "^0.7.2"
@@ -18,8 +20,96 @@ pygments = "^2.17.2"
 pymdown-extensions = "^10.7"
 python = "^3.12"
 ruff = "^0.1.11"
+seaborn = "^0.13.2"
 types-markdown = "^3.5.0.20240106"
+pandas = "^2.2.1"
+scipy = "^1.12.0"
+scikit-learn = "^1.4.1.post1"
 
+
+
+[tool.ruff]
+cache-dir = "~/.cache/ruff"
+exclude = ['__pycache__', "__pypackages__", ".cache", ".git", ".venv", "dist"]
+extend-include = ["*.ipynb"]
+fix = true
+line-length = 120
+src = ["src", "docs"]
+target-version = "py311"
+
+[tool.ruff.lint]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+extend-safe-fixes = ['E402', 'TCH002', 'TCH004', 'RET504']
+isort.known-first-party = ['src', 'docs']
+mccabe.max-complexity = 12
+pydocstyle.convention = "google"
+
+ignore = [
+  "D100",   # pydocstyle - missing docstring in public module
+  "D101",   # pydocstyle - missing docstring in public class
+  "D102",   # pydocstyle - missing docstring in public method
+  "D103",   # pydocstyle - missing docstring in public function
+  "D104",   # pydocstyle - missing docstring in public package
+  "D105",   # pydocstyle - missing docstring in magic method
+  "D106",   # pydocstyle - missing docstring in public nested class
+  "D107",   # pydocstyle - missing docstring in __init__
+  "ERA001", # commented-out code
+  "G004",   # f-string in logs
+  "T201",   # print
+  "T203",   # pretty print
+]
+# Plugins enabled
+select = [
+  "A",   # flake8-builtins
+  "B",   # flake8-bugbear
+  "BLE", # flake8-blind-except
+  "C4",  # flake8-comprehensions
+  "C90", # mccabe
+  "D",   # pydocstyle
+  "DJ",  # flake8-django
+  "DTZ", # flake8-datetimez
+  "E",   # pycodestyle errors
+  "ERA", # eradicate
+  "EXE", # flake8-executable
+  "F",   # pyflakes
+  "G",   # flake8-logging-format
+  "I",   # isort
+  "ICN", # flake8-import-conventions
+  "ISC", # flake8-implicit-str-concat
+  "N",   # pep8-naming
+  "PIE", # flake8-pie
+  "PLC", # pylint - convention
+  "PLE", # pylint - error
+  "PLW", # pylint - warning
+  "PTH", # flake8-use-pathlib
+  "Q",   # flake8-quotes
+  "RET", # flake8-return
+  "RUF", # Ruff-specific rules
+  "S",   # flake8-bandit
+  "SIM", # flake8-simplify
+  "T10", # flake8-debugger
+  "T20", # flake8-print
+  "TCH", # flake8-type-checking
+  "TID", # flake8-tidy-imports
+  "UP",  # pyupgrade
+  "W",   # pycodestyle - warning
+  "YTT", # flake8-2020
+]
+
+
+[tool.ruff.lint.pep8-naming]
+classmethod-decorators = [
+  "classmethod",
+  "pydantic.validator",
+  "pydantic.root_validator",
+  "pydantic.field_validator",
+  "sqlalchemy.ext.declarative.declared_attr",
+  "sqlalchemy.orm.declared_attr.directive",
+  "sqlalchemy.orm.declared_attr",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ['F401', 'D104']
 
 [build-system]
 requires = ["poetry-core"]

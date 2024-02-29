@@ -51,6 +51,11 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+plugins:
+  - mkdocs-jupyter:
+      execute: True
+
+
 # Markdown extensions
 markdown_extensions:
   - abbr
@@ -109,12 +114,15 @@ validation:
 
 nav:
   - Home: home.md
+  - Setup: setup.md
+  - Programma: schedule.md
   - Materiale:
-    - Introduzione: lessons_1/00_introduction.md
-    - Setup: lessons_1/01_setup.md
-    - Nozioni fondamentali: lessons_1/02_fundamentals.md
-    - Flusso di controllo: lessons_1/03_control_flow.md
-    - Funzioni: lessons_1/04_functions.md
-    - Classi: lessons_1/05_classes.md
-    - Ecosistema: lessons_1/06_ecosystem.md
+    - Introduzione: material/00_introduction.md
+    - Nozioni fondamentali: material/01_fundamentals.md
+    - Flusso di controllo: material/02_control_flow.md
+    - Funzioni: material/03_functions.md
+    - Classi: material/04_classes.md
+    - Ecosistema: material/05_ecosystem.md
+  - Esercizi: notebooks/exercise_1.ipynb
+
   - About: about.md
