@@ -28,6 +28,9 @@ scikit-learn = "^1.4.1.post1"
 
 
 
+[tool.poetry.group.dev.dependencies]
+nbqa = "^1.7.1"
+
 [tool.ruff]
 cache-dir = "~/.cache/ruff"
 exclude = ['__pycache__', "__pypackages__", ".cache", ".git", ".venv", "dist"]
