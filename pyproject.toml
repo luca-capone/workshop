@@ -20,7 +20,7 @@ nbqa = "*"
 pre-commit = "*"
 ruff = "*"
 
-[tool.poetry.group.doc.dependencies]
+[tool.poetry.group.docs.dependencies]
 blacken-docs = "*"
 markdown = "^3.5.1"
 markdown-callouts = "^0.3.0"
