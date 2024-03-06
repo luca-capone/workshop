@@ -119,7 +119,7 @@ nav:
   - Programma: schedule.md
   - Materiale:
     - Introduzione: material/00_introduction.md
-    - Nozioni fondamentali: material/01_fundamentals.md
+    - Nozioni fondamentali: material/fundamentals.md
     - Flusso di controllo: material/02_control_flow.md
     - Funzioni: material/03_functions.md
     - Classi: material/04_classes.md
