@@ -2,7 +2,7 @@
 site_name: "Python Workshop"
 site_author: Luca Capone
 site_description: "Material for Python Bootcamp"
-# site_url:
+site_url: https://luca-capone.github.io/workshop/
 
 # Repository
 repo_name: luca-capone/workshop

@@ -1,0 +1,58 @@
+{
+  "files.exclude": {
+    // Hide these folders and files
+    "**/*.pyc": {
+      "when": "$(basename).py"
+    },
+    ".cache": true,
+    ".coverage": true,
+    ".dist": true,
+    ".pytest_cache": true,
+    "**/__pycache__": true,
+    "**/._*": true,
+    "**/.pytest_cache": true,
+    // Do not hide this folders and files
+    "**/.git": false,
+    ".venv": false,
+    "site": false,
+  },
+  "json.schemaDownload.enable": true,
+  // Set default python interpreter to the virtual environment one
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  // Load environment variables defined in this file
+  "python.envFile": "${workspaceFolder}/.env",
+  // Format code on save
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
+    }
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "black-formatter.importStrategy": "fromEnvironment",
+  "ruff.lint.args": [
+    "[\"--config=${workspaceFolder}pyproject.toml\"]"
+  ],
+  "ruff.fixAll": true,
+  "ruff.importStrategy": "fromEnvironment",
+  "ruff.lint.run": "onSave",
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  // Pytest
+  "python.testing.pytestArgs": [
+    "tests",
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  // Allow to skip pre-commit hooks
+  "git.allowNoVerifyCommit": true,
+  "pythonTestExplorer.testFramework": "pytest"
+}

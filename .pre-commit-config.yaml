@@ -28,3 +28,10 @@ repos:
     rev: v1.1.352
     hooks:
       - id: pyright
+  - repo: local
+    hooks:
+      - id: create_exercises
+        name: create_exercises
+        entry: poetry run python3 scripts/create_exercises.py
+        language: system
+        files: ^src/.*/settings\.py$

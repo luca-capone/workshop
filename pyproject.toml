@@ -16,6 +16,7 @@ scikit-learn = "^1.4.1.post1"
 [tool.poetry.group.dev.dependencies]
 black = "*"
 codespell = "*"
+nbformat = "*"
 nbqa = "*"
 pre-commit = "*"
 ruff = "*"
@@ -64,6 +65,7 @@ ignore = [
   "G004",   # f-string in logs
   "T201",   # print
   "T203",   # pretty print
+  "S311",   # random
 ]
 # Plugins enabled
 select = [
@@ -117,6 +119,7 @@ classmethod-decorators = [
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ['F401', 'D104']
+"*.ipynb" = [ "F811",]
 
 [build-system]
 requires = ["poetry-core"]

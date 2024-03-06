@@ -108,3 +108,4 @@ Ci sono diverse modalità di passaggio degli argomenti:
 
    print(somma(1, 2, 3, 4))  # Possiamo passare quanti numeri vogliamo
    ```
+
