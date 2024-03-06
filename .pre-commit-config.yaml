@@ -24,13 +24,6 @@ repos:
     rev: 1.16.0
     hooks:
       - id: blacken-docs
-  - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.6
-    hooks:
-      - id: codespell
-        args: ["--write-changes"]
-        additional_dependencies:
-          - tomli
   - repo: https://github.com/RobertCraigie/pyright-python
     rev: v1.1.352
     hooks:
