@@ -118,12 +118,12 @@ nav:
   - Setup: setup.md
   - Programma: schedule.md
   - Materiale:
-    - Introduzione: material/00_introduction.md
+    - Introduzione: material/introduction.md
     - Nozioni fondamentali: material/fundamentals.md
-    - Flusso di controllo: material/02_control_flow.md
-    - Funzioni: material/03_functions.md
-    - Classi: material/04_classes.md
-    - Ecosistema: material/05_ecosystem.md
-  - Esercizi: notebooks/exercise_1.ipynb
+    - Flusso di controllo: material/control_flow.md
+    - Funzioni: material/functions.md
+    - Classi: material/classes.md
+    - Ecosistema: material/ecosystem.md
+  - Esercizi: notebooks/exercises/bank.ipynb
 
   - About: about.md

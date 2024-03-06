@@ -1,4 +1,4 @@
-name: ci
+name: pages-automatic-deployment
 on:
   push:
     branches:
