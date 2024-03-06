@@ -1,4 +1,4 @@
-name: pages-automatic-deployment
+name: documentation
 on:
   push:
     branches:
