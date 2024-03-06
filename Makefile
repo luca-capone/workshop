@@ -1,4 +1,4 @@
-# Commands can be run trough `make <command>`
+# Commands can be run through `make <command>`
 # .PHONY indicates that the target is not a file
 # @ at the start of the command silence its output
 # Comments after ## are used for help
@@ -25,4 +25,5 @@ setup: ## setup the project and serve the site, run once.
 	@make serve
 
 deploy:  ## deploy on GitHub Pages
-	@mkdocs gh-deploy
+	@poetry install --with dev --with docs --all-extras
+	@mkdocs gh-deploy --force

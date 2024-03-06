@@ -6,9 +6,24 @@ authors = ["luca-capone <58292893+luca-capone@users.noreply.github.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
+matplotlib = "^3.8.3"
+python = "^3.12"
+seaborn = "^0.13.2"
+pandas = "^2.2.1"
+scipy = "^1.12.0"
+scikit-learn = "^1.4.1.post1"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+codespell = "*"
+nbqa = "*"
+pre-commit = "*"
+ruff = "*"
+
+[tool.poetry.group.doc.dependencies]
+blacken-docs = "*"
 markdown = "^3.5.1"
 markdown-callouts = "^0.3.0"
-matplotlib = "^3.8.3"
 mkdocs = "^1.5.3"
 mkdocs-jupyter = "^0.24.6"
 mkdocs-material = "^9.5.3"
@@ -18,18 +33,7 @@ mkdocs-redirects = "^1.2.1"
 mkdocs-section-index = "^0.3.8"
 pygments = "^2.17.2"
 pymdown-extensions = "^10.7"
-python = "^3.12"
-ruff = "^0.1.11"
-seaborn = "^0.13.2"
 types-markdown = "^3.5.0.20240106"
-pandas = "^2.2.1"
-scipy = "^1.12.0"
-scikit-learn = "^1.4.1.post1"
-
-
-
-[tool.poetry.group.dev.dependencies]
-nbqa = "^1.7.1"
 
 [tool.ruff]
 cache-dir = "~/.cache/ruff"

@@ -114,7 +114,7 @@ validation:
     absolute_links: ignore
 
 nav:
-  - Home: home.md
+  - Home: index.md
   - Setup: setup.md
   - Programma: schedule.md
   - Materiale:
