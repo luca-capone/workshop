@@ -23,3 +23,6 @@ setup: ## setup the project and serve the site, run once.
 	@poetry install
 	@poetry shell
 	@make serve
+
+deploy:  ## deploy on GitHub Pages
+	@mkdocs gh-deploy
