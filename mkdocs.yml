@@ -14,21 +14,21 @@ use_directory_urls: false
 theme:
   name: material
   features:
-    - announce.dismiss       # allows users to dismiss announcements
-    - content.action.edit    # add an edit button to pages
-    - content.action.view    # add a View source button to pages
-    - content.code.annotate  # enable annotations for code blocks
-    - content.code.copy      # add a copy button to code blocks
-    - content.tooltips       # add tooltips to provide additional information.
-    - navigation.footer      # enables a footer in the navigation area
-    - navigation.indexes     # automatically generate index pages for sections
-    - navigation.sections    # divide the navigation into sections
-    - navigation.tabs        # add tabs
-    - navigation.top         # add a button to scroll to the top of the page
-    - search.highlight       # highlight search terms
-    - search.share           # allow sharing search results
-    - search.suggest         # search autocompletion
-    - toc.follow             # table of contents actively follows the reading progress
+    - announce.dismiss # allows users to dismiss announcements
+    - content.action.edit # add an edit button to pages
+    - content.action.view # add a View source button to pages
+    - content.code.annotate # enable annotations for code blocks
+    - content.code.copy # add a copy button to code blocks
+    - content.tooltips # add tooltips to provide additional information.
+    - navigation.footer # enables a footer in the navigation area
+    - navigation.indexes # automatically generate index pages for sections
+    - navigation.sections # divide the navigation into sections
+    - navigation.tabs # add tabs
+    - navigation.top # add a button to scroll to the top of the page
+    - search.highlight # highlight search terms
+    - search.share # allow sharing search results
+    - search.suggest # search autocompletion
+    - toc.follow # table of contents actively follows the reading progress
     # - toc.integrate          # integrate the table of contents into the navigation
   palette:
     - media: "(prefers-color-scheme: dark)"
@@ -55,7 +55,6 @@ plugins:
   - mkdocs-jupyter:
       execute: True
       include_source: True
-
 
 # Markdown extensions
 markdown_extensions:
@@ -104,8 +103,6 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
-
-
 validation:
   omitted_files: warn
   absolute_links: warn
@@ -118,12 +115,13 @@ nav:
   - Setup: setup.md
   - Programma: schedule.md
   - Materiale:
-    - Introduzione: material/introduction.md
-    - Nozioni fondamentali: material/fundamentals.md
-    - Flusso di controllo: material/control_flow.md
-    - Funzioni: material/functions.md
-    - Classi: material/classes.md
-    - Ecosistema: material/ecosystem.md
-  - Esercizi: notebooks/exercises/bank.ipynb
+      - Introduzione: material/introduction.md
+      - Nozioni fondamentali: material/fundamentals.md
+      - Flusso di controllo: material/control_flow.md
+      - Funzioni: material/functions.md
+      - Ecosistema: material/ecosystem.md
+      - Classi: material/classes.md
+  - Esercizio: notebooks/exercises/bank.ipynb
+  # - Soluzione: notebooks/solutions/bank.ipynb
 
   - About: about.md

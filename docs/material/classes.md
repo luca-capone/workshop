@@ -1,7 +1,7 @@
 # Classi
 ## Programmazione Orientata agli Oggetti
 
-Python è un linguaggio di programmazione che supporta la **programmazione orientata agli oggetti** (**o**bject **o**riented **p**rogramming*, **OOP**). Per capire questo concetto, immaginate un oggetto come una scatola che contiene informazioni e strumenti. Le informazioni sono chiamate **attributi**, mentre gli strumenti sono le **funzioni** o **metodi**.
+Python è un linguaggio di programmazione che supporta la **programmazione orientata agli oggetti** (**o**bject **o**riented **p**rogramming, **OOP**). Per capire questo concetto, immaginate un oggetto come una scatola che contiene informazioni e strumenti. Le informazioni sono chiamate **attributi**, mentre gli strumenti sono le **funzioni** o **metodi**.
 
 Una classe è come un **modello** (*template*) per creare oggetti. Per definire una classe, si utilizza la parola chiave `class`, seguita dal nome della classe e due punti. All'interno della classe, si definiscono le variabili ed i metodi che appartengono alla classe.
 
@@ -25,12 +25,14 @@ persona1.mostra_info()  # Output: Nome: Luca, Età: 32
 Le classi sono, a loro volta, oggetti e sono istanze di `type`. Ogni istanza della classe eredita attributi e metodi della classe. I metodi possono agire sulla specifica istanza tramite l'argomento speciale `self`.
 
 ```python
-class Square():
+class Square:
     # `side` è un attributo di `Square`
     side = 8
+
     # `area` è un metodo di `Square`
     def area(self):
-        return self.side ** 2
+        return self.side**2
+
 
 sq = Square()
 isinstance(sq, Square)
@@ -51,6 +53,7 @@ Una variabile definita all'interno di un metodo è propria della singola istanza
 class MyClass:
     # Variabile di classe
     z = 4
+
     def __init__(self, x, y):
         # Variabili di istanza
         self.x = x
@@ -80,7 +83,7 @@ b = 1000
 print(a == b)  # True, perché i valori sono uguali
 print(a is b)  # False, perché sono due oggetti separati
 
-a = b 
+a = b
 print(a == b)  # True, i valori sono uguali
 print(a is b)  # True, ora a e b si riferiscono allo stesso oggetto
 ```
@@ -96,7 +99,9 @@ class Studente(Persona):
         self.anno_di_studio = anno_di_studio
 
     def mostra_info_studente(self):
-        print(f"Nome: {self.nome}, Età: {self.eta}, Anno di Studio: {self.anno_di_studio}")
+        print(
+            f"Nome: {self.nome}, Età: {self.eta}, Anno di Studio: {self.anno_di_studio}"
+        )
 ```
 
 In questo esempio, la classe `Studente` eredita da `Persona` e aggiunge ulteriori funzionalità.
