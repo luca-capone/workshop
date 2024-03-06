@@ -1,4 +1,4 @@
-import argparse
+import sys
 from pathlib import Path
 
 import nbformat
@@ -71,14 +71,8 @@ if __name__ == "__main__":
 
 
 if __name__ == "__main__":
-    # Set up argument parsing
-    parser = argparse.ArgumentParser(description="Process Jupyter notebooks")
-    parser.add_argument(
-        "--clear_output", action="store_true", help="Clear output of code cells"
-    )
-
-    # Parse arguments
-    args = parser.parse_args()
+    # Check if '--clear_output' is in the command line arguments
+    clear_output = "--clear_output" in sys.argv
 
     # Define base paths
     base_dir = Path(__file__).resolve().parent.parent
@@ -86,4 +80,4 @@ if __name__ == "__main__":
     exercises_dir = base_dir / "docs" / "notebooks" / "exercises"
 
     # Process the notebooks
-    process_notebooks(solutions_dir, exercises_dir, args.clear_output)
+    process_notebooks(solutions_dir, exercises_dir, clear_output)

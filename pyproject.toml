@@ -119,7 +119,7 @@ classmethod-decorators = [
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ['F401', 'D104']
-"*.ipynb" = [ "F811",]
+"*.ipynb" = ["F811"]
 
 [build-system]
 requires = ["poetry-core"]
