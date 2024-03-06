@@ -34,4 +34,4 @@ repos:
         name: create_exercises
         entry: poetry run python3 scripts/create_exercises.py
         language: system
-        files: ^src/.*/settings\.py$
+        files: ^docs/notebooks/.*.ipynb$
