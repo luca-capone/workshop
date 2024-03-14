@@ -11,6 +11,39 @@ Le librerie sono composte da moduli, organizzati in pacchetti. L'insieme delle l
 
 Un **modulo** è un file Python (con estensione `.py`) che contiene definizioni e implementazioni di funzioni, classi e variabili. I moduli possono essere importati e utilizzati in altri moduli o script Python. Ad esempio, il modulo `math` in Python fornisce accesso a funzioni matematiche.
 
+```python
+# Importazione dell'intero modulo math
+import math
+
+# Utilizzo di una funzione specifica dal modulo math
+print(math.sqrt(16))  # Output: 4.0
+
+# Importazione di specifici elementi (sqrt e pi) dal modulo math
+from math import sqrt, pi
+
+# Utilizzo delle funzioni importate direttamente
+print(sqrt(25))  # Output: 5.0
+print(pi)  # Output: 3.1415...
+
+# Importazione di un modulo con un alias (numpy come np)
+import numpy as np
+
+# Utilizzo di funzioni di numpy usando l'alias
+array = np.array([1, 2, 3])
+print(array)  # Output: [1 2 3]
+
+# Importazione di un sottomodulo con alias (datetime da datetime)
+from datetime import datetime as dt
+
+# Utilizzo del sottomodulo datetime per ottenere la data e l'ora corrente
+current_time = dt.now()
+print(current_time)  # Output: (data e ora correnti)
+
+# Utilizzo del sottomodulo per formattare date
+formatted_date = current_time.strftime("%Y-%m-%d %H:%M:%S")
+print(formatted_date)  # Output: (data e ora correnti formattate)
+```
+
 ## Pacchetti
 
 Un **pacchetto** è una raccolta di moduli Python. Mentre un modulo è un singolo file Python, un pacchetto è una directory che contiene file Python e un file speciale chiamato `__init__.py`. Questo file indica che la directory è un pacchetto Python, che può includere sotto-pacchetti e moduli. Per esempio, `numpy` è un pacchetto popolare per il calcolo numerico.
@@ -33,6 +66,7 @@ major.minor.patch
 ```
 
 Una **patch version** introduce solo fix di bug, una **minor version** introduce nuove funzionalità mentre una **major version** segnala cambiamenti radicali che possono introdurre regressioni.
+
 
 ## Ambienti virtuali
 

@@ -52,6 +52,7 @@ theme:
     repo: fontawesome/brands/github
 
 plugins:
+  - search
   - mkdocs-jupyter:
       execute: True
       include_source: True
@@ -117,10 +118,11 @@ nav:
   - Materiale:
       - Introduzione: material/introduction.md
       - Nozioni fondamentali: material/fundamentals.md
+      - Collezioni: material/collections.md
       - Flusso di controllo: material/control_flow.md
       - Funzioni: material/functions.md
-      - Ecosistema: material/ecosystem.md
       - Classi: material/classes.md
+      - Ecosistema: material/ecosystem.md
   - Esercizio: notebooks/exercises/bank.ipynb
   # - Soluzione: notebooks/solutions/bank.ipynb
 

@@ -21,3 +21,9 @@ Niente. Questo corso è stato pensato e strutturato appositamente per chi non ha
 
 !!! failure "Esempio negativo"
     Riquadri come questo contengono esempi di codice scritto male o addirittura non funzionante.
+
+!!! quote "Citazione"
+    Riquadri come questo contengono citazioni.
+
+??? info "Soluzione di un esercizio"
+    Riquadri come questo contengono le soluzioni degli esercizi, clicca per rivelarle.

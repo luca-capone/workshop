@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Ambiente di sviluppo
 
 ## Installazione di Python
@@ -30,7 +35,7 @@ La prima cosa di cui abbiamo bisogno, chiaramente, è Python stesso.
 
 ## Installazione di Visual Studio Code
 
-Per sviluppare in Python, ci serve un ambiente dove scrivere, testare e gestire il codice. Le opzioni possibili sono numerose, ma si distinguono approssimativamente in due categorie **editor di testo** ed **ambienti di sviluppo integrati** (***I**ntegrated **D**evelopment **E**nvironment*, **IDE**).
+Per sviluppare in Python, ci serve un ambiente dove scrivere, testare e gestire il codice. Le opzioni possibili sono numerose, ma si distinguono approssimativamente in due categorie **editor di testo** ed **ambienti di sviluppo integrati** (Integrated Development Environments, **IDE**).
 
 - **Editor di Testo**: Sono programmi focalizzati sulla scrittura e modifica del codice sorgente. Offrono funzionalità come l'evidenziazione della sintassi e il completamento automatico del codice. Esempi includono **Notepad++** e **Sublime Text**.
 - **IDE**: Un IDE è un ambiente più completo che integra diverse funzionalità: editor di testo, debugger, compilatore/interprete, e altri strumenti utili. Esempi sono **PyCharm** e **Eclipse**.
@@ -86,32 +91,32 @@ Per sviluppare in Python, ci serve un ambiente dove scrivere, testare e gestire 
 === "Windows"
      1. Apri il Prompt dei comandi (CMD) o PowerShell.
      2. Esegui il comando per scaricare e installare Poetry:
-     
+
         ```
         (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
         ```
-     
+
      3. Dopo l'installazione, riavvia il Prompt dei comandi o PowerShell.
      4. Verifica l'installazione con il comando `poetry --version`.
 
 === "Mac"
      1. Apri il terminale.
      2. Usa il comando curl per scaricare e installare Poetry:
-     
+
         ```
         curl -sSL https://install.python-poetry.org | python3 -
         ```
-     
+
      3. Chiudi e riapri il terminale.
      4. Verifica l'installazione con `poetry --version`.
 
 === "Linux"
      1. Apri il terminale.
      2. Per installare Poetry, usa il comando:
-     
+
         ```
         curl -sSL https://install.python-poetry.org | python3 -
         ```
-     
+
      3. Una volta completata l'installazione, chiudi e riapri il terminale.
      4. Controlla che Poetry sia stato installato correttamente con `poetry --version`.

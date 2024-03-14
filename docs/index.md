@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 Benvenuti al Python Workshop!
 
 Siamo entusiasti di iniziare questo viaggio insieme nel mondo della programmazione.
@@ -6,4 +12,4 @@ Siamo entusiasti di iniziare questo viaggio insieme nel mondo della programmazio
 
 Assicuratevi di completare tutti i passaggi indicati **prima** dell'inizio del corso. Questo garantirà che tutti possano iniziare il workshop con tutti gli strumenti necessari già pronti e configurati.
 
-Il workshop coprirà il materiale presente in questa [pagina](material/00_introduction.md) e si concluderà con un piccolo progetto per consolidare le nozioni apprese.
+Il workshop coprirà il materiale presente in questa [pagina](material/introduction.md) e si concluderà con un piccolo progetto per consolidare le nozioni apprese.
