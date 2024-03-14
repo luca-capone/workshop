@@ -1,4 +1,6 @@
-
+---
+icon: material/view-list-outline
+---
 
 # Collezioni
 

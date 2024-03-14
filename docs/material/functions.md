@@ -1,3 +1,7 @@
+---
+icon: material/function
+---
+
 # Funzioni
 
 Una **funzione** è un blocco di codice che viene eseguito solo quando viene chiamato. Le funzioni sono utili per scomporre compiti complessi in parti più piccole e gestibili, rendendo il codice più organizzato, riutilizzabile e più facile da testare.

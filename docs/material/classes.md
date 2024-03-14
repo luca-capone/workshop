@@ -1,3 +1,7 @@
+---
+icon: material/code-block-parentheses
+---
+
 # Classi
 ## Programmazione Orientata agli Oggetti
 

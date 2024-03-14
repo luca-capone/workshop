@@ -1,3 +1,7 @@
+---
+icon: material/toy-brick-outline
+---
+
 # Fondamenti
 ## Commenti
 

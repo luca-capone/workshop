@@ -19,6 +19,7 @@ theme:
     - content.action.view # add a View source button to pages
     - content.code.annotate # enable annotations for code blocks
     - content.code.copy # add a copy button to code blocks
+    - content.code.select # include a button to allow for the selection of line ranges by the user
     - content.tooltips # add tooltips to provide additional information.
     - navigation.footer # enables a footer in the navigation area
     - navigation.indexes # automatically generate index pages for sections
@@ -29,14 +30,11 @@ theme:
     - search.share # allow sharing search results
     - search.suggest # search autocompletion
     - toc.follow # table of contents actively follows the reading progress
-    # - toc.integrate          # integrate the table of contents into the navigation
+
   palette:
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: indigo
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch-off
+        icon: material/link
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -45,11 +43,19 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
   font:
     text: Roboto
     code: Roboto Mono
   icon:
-    repo: fontawesome/brands/github
+    repo: material/git
+    logo: material/language-python
 
 plugins:
   - search
@@ -74,6 +80,9 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -103,6 +112,7 @@ markdown_extensions:
           case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.tilde
 
 validation:
   omitted_files: warn

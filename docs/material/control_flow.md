@@ -1,3 +1,7 @@
+---
+icon: material/arrow-decision-outline
+---
+
 # Flusso di controllo
 ## Indentazione
 

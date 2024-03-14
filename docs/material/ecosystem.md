@@ -1,3 +1,7 @@
+---
+icon: material/library-outline
+---
+
 # Ecosistema Python
 ## Librerie
 

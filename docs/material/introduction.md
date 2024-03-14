@@ -1,3 +1,7 @@
+---
+icon: material/school
+---
+
 # Introduzione
 
 ## Perché Python?
