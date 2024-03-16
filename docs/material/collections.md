@@ -9,13 +9,14 @@ Le collezioni sono strutture dati che servono a contenere più oggetti al loro i
 
 La tabella sottostante riassume le proprietà di ogni tipo di collezione:
 
+
 | tipo          | mutabile | ordinata  | duplicati | struttura |
-|---------------|:--------:|:---------:|:---------:|:---------:|
-| dizionario    | sì       | no | no        | `{a:m, b:n}`   |
-| tupla       | no       | sì        | sì        | `(a, b)`  |
-| lista         | sì       | sì        | sì        | `[a, b]`  |
-| insieme           | no       | no        | no        | `{a, b}`  |
-| stringa       | no       | sì        | sì        | `ciao`    |
+|:--------------|:--------:|:---------:|:---------:|:---------:|
+| dizionario    |    sì    |    no      |    no     | `{a:m, b:n}`   |
+| tupla         |    no    |    sì      |    sì     | `(a, b)`  |
+| lista         |    sì    |    sì      |    sì     | `[a, b]`  |
+| insieme       |    no    |    no      |    no     | `{a, b}`  |
+| stringa       |    no    |    sì      |    sì     | `ciao`    |
 
 Ecco alcuni esempi di collezioni:
 

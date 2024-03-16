@@ -1,1 +1,5 @@
-TBD
+---
+hide:
+  - navigation
+  - toc
+---
