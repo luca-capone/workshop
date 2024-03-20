@@ -292,9 +292,7 @@ Crea un semplice gioco che genera un numero casuale tra 1 e 10 e chiede all'uten
 
 ??? info "Soluzione"
     ```python
-    import random
-
-    numero_segreto = random.randint(1, 10)
+    NUMERO_SEGRETO = 7  # Modificare per cambiare la soluzione
     tentativi = 0
 
     while tentativi < 3:
@@ -302,10 +300,10 @@ Crea un semplice gioco che genera un numero casuale tra 1 e 10 e chiede all'uten
             guess = int(input("Indovina il numero (tra 1 e 10): "))
             tentativi += 1
 
-            if guess == numero_segreto:
-                print(f"Hai indovinato! Il numero era {numero_segreto}.")
+            if guess == NUMERO_SEGRETO:
+                print(f"Hai indovinato! Il numero era {NUMERO_SEGRETO}.")
                 break
-            elif guess < numero_segreto:
+            elif guess < NUMERO_SEGRETO:
                 print("Troppo basso!")
             else:
                 print("Troppo alto!")
@@ -313,5 +311,5 @@ Crea un semplice gioco che genera un numero casuale tra 1 e 10 e chiede all'uten
             print("Per favore, inserisci un numero valido.")
 
         if tentativi == 3:
-            print(f"Hai finito i tentativi. Il numero era {numero_segreto}.")
+            print(f"Hai finito i tentativi. Il numero era {NUMERO_SEGRETO}.")
     ```
