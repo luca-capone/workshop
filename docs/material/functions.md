@@ -210,24 +210,6 @@ Scrivi una funzione `conta_vocali` che prenda una stringa come argomento e resti
     ```
 
 ### Esercizio 8
-Crea una funzione `e_primo` che determini se un numero è primo o meno. La funzione prende un numero intero come input e restituisce `True` se il numero è primo, altrimenti `False`.
-
-??? info "Soluzione"
-    ```python
-    def e_primo(numero):
-        if numero <= 1:
-            return False
-        for i in range(2, int(numero**0.5) + 1):
-            if numero % i == 0:
-                return False
-        return True
-
-
-    print(e_primo(11))  # Output: True
-    print(e_primo(4))  # Output: False
-    ```
-
-### Esercizio 9
 Scrivi una funzione `cifra_numeri` che prenda una stringa come input e sostituisca ogni cifra numerica (0-9) nella stringa con il corrispondente numero in parole. Per esempio, "ho 2 gatti e 1 cane" diventa "ho due gatti e uno cane".
 
 ??? info "Soluzione"
@@ -251,7 +233,7 @@ Scrivi una funzione `cifra_numeri` che prenda una stringa come input e sostituis
     print(cifra_numeri("ho 2 gatti e 1 cane"))  # Output: ho due gatti e uno cane
     ```
 
-### Esercizio 10
+### Esercizio 9
 Crea una funzione `frequenza_parole` che prenda una stringa come input e restituisca un dizionario con ogni parola unica nella stringa come chiave e il numero di volte in cui appare quella parola come valore. Assume che le parole siano separate da spazi e che la punteggiatura non sia importante.
 
 ??? info "Soluzione"

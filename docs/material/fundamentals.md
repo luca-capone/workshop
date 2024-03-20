@@ -155,7 +155,9 @@ di stringa con tripli apici doppi su
 più righe."""
 ```
 
-La formattazione delle stringhe in Python è un concetto fondamentale per manipolare e presentare dati in modo leggibile e strutturato.
+La formattazione delle stringhe in Python è un concetto fondamentale per manipolare e presentare dati in modo leggibile e strutturato. Per introdurla abbiamo bisogno di anticipare il concetto di **metodo**. Tutti gli elementi introdotti finora, e tutti quelli che introdurremo in seguito, sono oggetti. Gli oggetti hanno funzionalità, chiamate metodi, associate a loro.
+
+Un metodo è semplicemente una funzione che è "attaccata" a un oggetto e può agire sui dati dell'oggetto. Nel caso delle stringhe, il metodo `format()` è uno di questi. Esso permette di inserire valori all'interno della stringa. Approfondiremo il concetto di metodi quando parleremo delle classi.
 
 ```python
 nome = "Luca"
@@ -178,7 +180,7 @@ Il metodo `format()` offre molta flessibilità. È possibile specificare l'ordin
 saluto = "Ciao, mi chiamo {nome} e ho {eta} anni.".format(nome="Luca", eta=32)
 ```
 
-Esiste però un metodo molto più conveniente per la formattazione delle stringhe, vale a dire l'utilizzo delle cosiddette **f-string**:
+Esiste però una tecnica molto più conveniente per la formattazione delle stringhe, vale a dire l'utilizzo delle cosiddette **f-string**:
 
 ```python
 nome = "Luca"
@@ -200,6 +202,14 @@ print(frase_completa)  # Il cielo è blu.
 
 !!! warning "Concatenazione silente"
     In effetti, è sufficiente mettere due stringhe vicine per ottenere una concatenazione, proprietà detta **concatenazione silente**. Fare estremamente attenzione a questa particolare funzionalità di Python, dato che è una fonte inesauribile di bug.
+
+Possiamo ottenere la lunghezza di una stringa con la funzione `len()`. Introdurremo il concetto di funzioni nel capitolo
+apposito, per ora è sufficiente sapere che le funzioni in Python sono molto simili al concetto matematico di funzione:
+ hanno in input un certo numero di variabili e restituiscono uno o più valori.
+
+```python
+len("ciao")  # 4
+```
 
 ## Esercizi
 ### Esercizio 1

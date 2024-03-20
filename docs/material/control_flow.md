@@ -58,6 +58,11 @@ Il **looping** è la possibilità di eseguire ripetutamente uno stesso blocco di
 for number in [0, 1, 2, 3, 4]:
     print(number)
 
+# Stesso risultato del ciclo precedente ma usando la funzione `range` che restituisce la collezione
+# dei numeri da 0 al numero passato come argomento, escluso il numero stesso.
+for i in range(5):
+    print(number)
+
 for lettera in "Python":
     print(lettera.upper())
 ```
