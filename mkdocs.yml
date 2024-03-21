@@ -134,6 +134,6 @@ nav:
       - Classi: material/classes.md
       - Ecosistema: material/ecosystem.md
   - Esercizio: notebooks/exercises/bank.ipynb
-  # - Soluzione: notebooks/solutions/bank.ipynb
+  - Soluzione: notebooks/solutions/bank.ipynb
 
   - About: about.md
