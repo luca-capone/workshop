@@ -38,15 +38,15 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: red
+      accent: red
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: indigo
+      primary: red
+      accent: red
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
@@ -62,6 +62,7 @@ plugins:
   - mkdocs-jupyter:
       execute: True
       include_source: True
+  - print-site
 
 # Markdown extensions
 markdown_extensions:
@@ -133,7 +134,5 @@ nav:
       - Funzioni: material/functions.md
       - Classi: material/classes.md
       - Ecosistema: material/ecosystem.md
-  - Esercizio: notebooks/exercises/bank.ipynb
   - Soluzione: notebooks/solutions/bank.ipynb
-
   - About: about.md
